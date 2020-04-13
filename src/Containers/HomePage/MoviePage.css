@@ -1,0 +1,9 @@
+.movies-page {
+}
+
+.movie-card{
+    display: block;
+    background: gray;
+    margin: 5px;
+
+}
