@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux';
 import { withRouter} from 'react-router';
 import * as moviesActions from '../../Actions/MoviesActions';
 import * as genresActions from '../../Actions/GenreActions';
-import {MoviesPage as MoviesPageComponent} from './MoviesPage';
+import {HomePage as HomePageComponent} from './HomePage';
 
 const mapStateToProps = (state) => {
     return {
@@ -21,4 +21,4 @@ const mapDispatchToProps = (dispatch) => {
         }
 };
 
-export const MoviesPage = connect(mapStateToProps, mapDispatchToProps)(MoviesPageComponent);
+export const HomePage = connect(mapStateToProps, mapDispatchToProps)(HomePageComponent);

@@ -1,0 +1,7 @@
+.movies-list{
+    border-top: darkgray solid 2px;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(172,171,169,0.16);
+    margin-top: 5px;
+}

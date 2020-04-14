@@ -1,0 +1,8 @@
+.movie-card{
+    display: block;
+    background: snow;
+    margin: 5px;
+    width: 20%;
+    box-shadow: 0 0 3px gray;
+
+}

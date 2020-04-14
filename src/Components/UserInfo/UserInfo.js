@@ -1,9 +1,9 @@
 import React from "react";
 
-export const MovieInfo = (props) => {
+export const UserInfo = (props) => {
     const {movieItem} = props;
 
     return (
-        <div>MovieInfo</div>
+        <div>UserInfo</div>
     )
 };

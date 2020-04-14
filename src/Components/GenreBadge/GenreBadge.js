@@ -26,7 +26,7 @@ export const GenreBadge = ( props ) => {
         <div>
             {itemGenres.map((el, i) => {
             return (
-                <Badge color="secondary" key={el.i}>
+                <Badge color="primary" key={el.i} className='badge-item'>
                     {`${el}`}
                 </Badge>
             )}

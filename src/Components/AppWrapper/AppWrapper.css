@@ -1,7 +1,4 @@
-.movie-container {
+.global-container {
     width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    background: aquamarine;
     margin: 0 auto;
 }
