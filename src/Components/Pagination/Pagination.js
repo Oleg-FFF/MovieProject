@@ -11,7 +11,7 @@ export const PaginationComponent = (props) => {
         const useStyles = makeStyles((theme) => ({
             root: {
                 '& > *': {
-                    marginTop: theme.spacing(2),
+                    marginTop: theme.spacing(0),
                 },
             },
         }));
@@ -24,9 +24,11 @@ export const PaginationComponent = (props) => {
     };
 
         return (
-                <div className={`${classes.root} ${CN}`}>
+            <div className={`${CN}`}>
+                <div className={`${classes.root} pagination-cont`}>
                     <Pagination count={totalPages} variant="outlined" shape="rounded" page={currentPage} onChange={handleChange} />
                 </div>
+            </div>
         );
 }
 

@@ -5,7 +5,7 @@ import { genresReducer } from "./GenresReducer";
 
 export default () => {
     return combineReducers({
-        counter: headerReducer,
+        header: headerReducer,
         movies: moviesReducer,
         genres: genresReducer
     });

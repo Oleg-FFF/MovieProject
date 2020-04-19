@@ -1,4 +1,4 @@
-import {INCREMENT, DECREMENT, LOG_TOGGLE, SORT_BY, GET_MOVIES} from '../Actions/MoviesActionTypes'
+import {INCREMENT, DECREMENT, LOG_TOGGLE, SORT_BY, GET_MOVIES, CHANGE_THEME} from '../Actions/MoviesActionTypes'
 import {api_key} from "../Constants/Constants";
 
 
@@ -12,6 +12,9 @@ export const headerReducer = (state = initialState, action) => {
     debugger
     console.log('action');
     switch (action.type) {
+        case CHANGE_THEME: {
+            return {...state, darkTheme: !state.darkTheme};
+        }
         case INCREMENT: {
             console.log("incremented");
             return {...state, counter: state.counter +1};

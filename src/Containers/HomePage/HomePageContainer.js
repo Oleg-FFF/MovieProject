@@ -8,7 +8,8 @@ import {HomePage as HomePageComponent} from './HomePage';
 const mapStateToProps = (state) => {
     return {
         movies: state.movies,
-        genres: state.genres
+        genres: state.genres,
+        header: state.header
     }
 };
 

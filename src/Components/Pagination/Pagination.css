@@ -1,4 +1,10 @@
 .pagination {
     justify-content: center;
-    color: red;
+    background: #FDF9F9;
+}
+
+.pagination-cont{
+    background: snow;
+    padding: 3px;
+    border-radius: 5px;
 }
