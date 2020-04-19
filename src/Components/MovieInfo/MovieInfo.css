@@ -1,0 +1,13 @@
+.movie-info > .title {
+    font-family: Roboto, serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: dimgrey;
+    padding: 2px 5px;
+}
+.movie-info > .overview {
+    font-size: 10px;
+    justify-content: stretch;
+    color: darkgray;
+    padding: 4px;
+}

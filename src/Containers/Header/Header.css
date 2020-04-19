@@ -1,0 +1,10 @@
+.header{
+    background: #FDF9F9;
+
+}
+
+.header > .logo {
+    width: 10rem;
+    height: 100%;
+    margin: 5px;
+}

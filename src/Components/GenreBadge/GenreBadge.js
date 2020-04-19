@@ -1,5 +1,9 @@
 import React, {useState} from 'react';
 import { Badge } from 'reactstrap';
+import './GenreBadge.css'
+
+
+const CN =  'badge-item';
 
 
 export const GenreBadge = ( props ) => {
@@ -24,9 +28,9 @@ export const GenreBadge = ( props ) => {
 
     return (
         <div>
-            {itemGenres.map((el, i) => {
+            {itemGenres.length && itemGenres.map((el, i) => {
             return (
-                <Badge color="primary" key={el.i} className='badge-item'>
+                <Badge color="secondary" key={el.i} className={`${CN}`}>
                     {`${el}`}
                 </Badge>
             )}

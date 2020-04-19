@@ -3,11 +3,12 @@ import {api_key} from "../Constants/Constants";
 
 
 const initialState = {
+    darkTheme: false,
     counter: 0,
     userIsAuth: true
 };
 
-export const counterReducer = (state = initialState, action) => {
+export const headerReducer = (state = initialState, action) => {
     debugger
     console.log('action');
     switch (action.type) {

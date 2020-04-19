@@ -1,8 +1,11 @@
 import React, {Fragment} from "react";
-import {Header} from "../Header/Header";
+import {Header} from "../../Containers/Header/Header";
 import {GenreBadge} from "../GenreBadge/GenreBadge";
 import {StarRating} from "../StarsRating/StarsRating";
+import {PosterPreview} from "../PosterPreview/PosterPreview";
 import './MovieListCard.css'
+import {MovieInfo} from "../MovieInfo/MovieInfo";
+
 
 const CN = 'movie-card';
 
@@ -11,8 +14,8 @@ export const MoviesListCard = (props) => {
 
     return (
         <div className={`${CN}`}>
-            <div>{`${movieItem.title}`}</div>
-            <GenreBadge movieItem={movieItem} genres={genresList}/>
+            <PosterPreview movieItem={movieItem}/>
+            <MovieInfo movieItem={movieItem} genresList={genresList} />
             <StarRating movieItem={movieItem}/>
         </div>
     )

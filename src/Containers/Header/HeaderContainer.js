@@ -1,7 +1,7 @@
 import{ connect} from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { withRouter} from 'react-router';
-import {Counter as CounterComponent} from './Counter';
+import {Header as HeaderComponent} from './Header';
 import {increment, decrement, logToggle} from '../../Actions/MoviesActions'
 
 
@@ -23,5 +23,5 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-export const Counter = connect(mapStateToProps, mapDispatchToProps)(CounterComponent);
+export const Header = connect(mapStateToProps, mapDispatchToProps)(HeaderComponent);
 

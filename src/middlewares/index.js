@@ -5,10 +5,11 @@ export const saveMoviesToLocalStorage = store => next => action => {
     console.log('dispatching', action);
 
     if (action.type === GET_MOVIES) {
-        const { payload: {results}} = action;
+        const { payload: {results, page}} = action;
         let dataForStorage = '{}';
         try {
             dataForStorage = JSON.stringify({
+                currentPage: page,
                 date: new Date(),
                 moviesList: results
             });

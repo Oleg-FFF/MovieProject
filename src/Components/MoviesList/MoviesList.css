@@ -1,7 +1,15 @@
 .movies-list{
-    border-top: darkgray solid 2px;
+    border-top: darkgray solid 1px;
     display: flex;
+    /*flex-direction: row;*/
+    /*flex-basis: min-content;*/
+    flex-flow: column;
     flex-wrap: wrap;
     background: rgba(172,171,169,0.16);
     margin-top: 5px;
+    /*align-content: space-around;*/
+    justify-content: start;
+    align-content: center;
+    max-height: 200rem;
+    padding: 20px 0;
 }

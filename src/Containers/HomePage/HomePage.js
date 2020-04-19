@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import { BoxLoading, LoopCircleLoading } from 'react-loadingg';
 import './HomePage.css'
-import {Header} from "../../Components/Header/Header";
+import {Header} from "../Header/Header";
 import {MoviesList} from "../../Components/MoviesList/MoviesList";
+import {PaginationComponent} from "../../Components/Pagination/Pagination";
 
 
 const CN = 'home-page';
@@ -10,23 +11,24 @@ const CN = 'home-page';
 export class HomePage extends Component {
 
     componentDidMount() {
-        const {actions: {getGenres, getMovies, }} = this.props;
+        const {actions: {getGenres, getMovies, setPage }, movies: {page, isLoading, isLoaded}} = this.props;
         console.log(this.props);
-        getMovies();
         getGenres();
+        getMovies(page);
     }
 
 
     render() {
-        const {movies: {moviesList}, genres: {genresList}} = this.props;
+        const {movies: {moviesList, isLoading, page, totalPages}, genres: {genresList}, genres, actions: {setPage}} = this.props;
         return (
             <div>
                 <Header />
                 {!moviesList.length && !genresList.length &&
                     <LoopCircleLoading color='#456446' size='large' />
                 }
-                {moviesList.length && genresList.length &&
-                    <MoviesList moviesList={moviesList} genresList={genresList}/>
+                <PaginationComponent setPage={setPage} totalPages={totalPages}></PaginationComponent>
+                {!!moviesList.length && !!genresList.length &&
+                    <MoviesList moviesList={moviesList} genresList={genresList} stePage={setPage}/>
                 }
             </div>
         )

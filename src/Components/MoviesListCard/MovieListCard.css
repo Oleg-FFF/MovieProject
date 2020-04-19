@@ -1,8 +1,10 @@
 .movie-card{
     display: block;
     background: snow;
-    margin: 5px;
+    margin: 5px 15px;
     width: 20%;
     box-shadow: 0 0 3px gray;
-
+    cursor: pointer;
+    align-self: flex-start;
+    border-radius: 5px;
 }
