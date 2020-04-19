@@ -9,10 +9,10 @@ import './MoviesList.css'
 const CN = 'movies-list';
 
 export const MoviesList = (props) => {
-    const {moviesList, genresList } = props;
+    const {moviesList, genresList, darkTheme } = props;
 
     return (
-        <div className={`${CN}`}>
+        <div className={darkTheme ? `${CN} dark` : `${CN}`}>
             {moviesList.length && genresList.length &&
             moviesList.map((movie) => {
                 return (

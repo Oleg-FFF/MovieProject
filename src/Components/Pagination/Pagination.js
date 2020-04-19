@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Pagination from '@material-ui/lab/Pagination';
-import './Pagination.css'
+import './Pagination.scss'
 
 const CN = 'pagination';
 
@@ -16,7 +16,7 @@ export const PaginationComponent = (props) => {
             },
         }));
 
-        const {totalPages, currentPage, setPage} = props;
+        const {totalPages, currentPage, setPage, darkTheme} = props;
         const classes = useStyles();
         const handleChange = (event, value) => {
             console.log(value)
@@ -24,8 +24,8 @@ export const PaginationComponent = (props) => {
     };
 
         return (
-            <div className={`${CN}`}>
-                <div className={`${classes.root} pagination-cont`}>
+            <div className={darkTheme ? `${CN} dark` : `${CN}`}>
+                <div className={darkTheme ? `${classes.root} pagination-cont dark` : `${classes.root} pagination-cont`}>
                     <Pagination count={totalPages} variant="outlined" shape="rounded" page={currentPage} onChange={handleChange} />
                 </div>
             </div>

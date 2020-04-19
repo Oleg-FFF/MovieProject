@@ -1,0 +1,21 @@
+.pagination {
+  justify-content: center;
+  background: #FDF9F9;
+  border-radius: 0;
+
+  &.dark{
+    background: #252A37;
+    border-radius: 0;
+  }
+}
+
+.pagination-cont{
+  background: snow;
+  padding: 3px;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  &.dark{
+    background: grey;
+    border-radius: 5px;
+  }
+}

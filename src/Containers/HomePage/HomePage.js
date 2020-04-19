@@ -24,7 +24,7 @@ export class HomePage extends Component {
             <div>
                 <Header />
                 {!moviesList.length && !genresList.length &&
-                    <LoopCircleLoading color='#456446' size='large' />
+                    <LoopCircleLoading color="#252A37" size='large' />
                 }
                 <PaginationComponent setPage={setPage} totalPages={totalPages} darkTheme={darkTheme}></PaginationComponent>
                 {!!moviesList.length && !!genresList.length &&
