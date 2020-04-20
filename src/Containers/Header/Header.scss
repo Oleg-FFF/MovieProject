@@ -107,10 +107,15 @@
 
 .theme{
   font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-align: center;
   text-shadow: lightgray;
   font-weight: bold;
   color: gray;
+  padding: 2px;
+
+  &.dark{
+    color: #FDF9F9;
+  }
 
 }
