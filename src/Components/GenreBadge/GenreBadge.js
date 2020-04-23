@@ -28,7 +28,7 @@ export const GenreBadge = ( props ) => {
 
     return (
         <div>
-            {itemGenres.length && itemGenres.map((el, i) => {
+            {!!itemGenres.length && itemGenres.map((el, i) => {
             return (
                 <Badge color="secondary" key={el.i} className={`${CN}`}>
                     {`${el}`}
